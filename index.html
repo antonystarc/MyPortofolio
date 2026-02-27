@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <header id="hero">
+        <div class="container">
+            <img src="assets/profile.jpg" alt="Profile photo" class="profile-img" />
+            <h1>Antony Starc</h1>
+            <p>Full‑stack software engineer specializing in web applications and user experience. 
+                I'm a <strong>Software Developer</strong> with experience in <em>JavaScript, Python, and cloud platforms</em>.
+            </p>
+            <a href="#contact" class="btn">Get in touch</a>
+        </div>
+    </header>
+
+    <nav id="main-nav">
+        <ul class="container">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Experienced developer with a passion for building performant, accessible web applications. 
+            Over the past 5 years I've worked on e-commerce platforms, internal tools, and open-source libraries.
+        </p>
+        <ul class="stats">
+            <li><strong>5</strong> years of experience</li>
+            <li><strong>B.S. Computer Science</strong></li>
+            <li><strong>JavaScript, Python, Docker, AWS</strong></li>
+        </ul>
+    </section>
+
+    <section id="projects" class="container">
+        <h2>Projects</h2>
+        <div class="project-list">
+            <!-- Repeat this block for each project -->
+            <div class="project">
+                <h3>Portfolio Website</h3>
+                <p class="description">This static site showcases my work and experience. It was built purely with HTML and CSS and is deployed on GitHub Pages.</p>
+                <p class="tech">Tech: HTML, CSS, GitHub Pages</p>
+                <p class="links">
+                    <a href="https://antonystarc.github.io/MyPortofolio" target="_blank">Live</a> |
+                    <a href="https://github.com/antonystarc/MyPortofolio" target="_blank">Source</a>
+                </p>
+            </div>
+            <!-- end project -->
+        </div>
+    </section>
+
+    <section id="resume" class="container">
+        <h2>Resume</h2>
+        <p>Download a PDF version of my resume:</p>
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+        <!-- you can also embed a PDF or link to the one you uploaded to the repo -->
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact</h2>
+        <p>You can reach me at:</p>
+        <ul class="contact-info">
+            <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">yourprofile</a></li>
+            <li>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></li>
+        </ul>
+        <form class="contact-form" action="mailto:you@example.com" method="post" enctype="text/plain">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </section>
+
+    <footer class="container">
+        <p>&copy; <!-- year --> Your Name. All rights reserved.</p>
+    </footer>
+</body>
+</html>
