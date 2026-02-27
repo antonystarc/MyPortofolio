@@ -106,6 +106,17 @@ section {
     margin-bottom: 0.5rem;
 }
 
+.contact-info a,
+.contact-form a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+.contact-info a:hover,
+.contact-form a:hover {
+    text-decoration: underline;
+}
+
 .contact-form label {
     display: block;
     margin-top: 0.5rem;
